@@ -1,0 +1,15 @@
+.mainBlock {
+    height: 100vh;
+    background: burlywood;
+}
+
+.greeting {
+    width: 300px;
+    background: darksalmon;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background: darksalmon;
+}

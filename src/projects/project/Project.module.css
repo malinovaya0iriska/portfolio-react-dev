@@ -1,0 +1,33 @@
+.project {
+    background: cornflowerblue;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.icon {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://d3kqdc25i4tl0t.cloudfront.net/articles/content/497_449074_management.hero.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.previewBtn {
+
+}
+
+.title {
+    background: #ade7ad;
+}
+
+.description {
+    background: #f3b75f;
+}
