@@ -1,0 +1,51 @@
+.skillsBlock {
+  min-height: 100vh;
+  background: #f5f8fd;
+  .skillsContainer {
+
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 50px;
+
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      row-gap: 50px;
+      column-gap: 50px;
+
+      li {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 15px;
+      }
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #173b6c;
+      font-family: "Raleway", sans-serif;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+  }
+}
