@@ -1,0 +1,88 @@
+@import './../../common/styles/sass/variables';
+
+@font-face {
+  font-family: Raleway_Black;
+  src: url("./../../assets/fonts/raleway/static/Raleway-Black.ttf") format('trueopen');
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./../../assets/fonts/poppins/Poppins-SemiBold.ttf") format('trueopen');
+}
+
+.profile {
+  display: none;
+
+  .profileImg {
+    margin: 15px auto;
+    display: block;
+    width: 80px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  h1 {
+    color: $activeTextColor;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-align-last: center;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+.nav {
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    li {
+      &:hover > a {
+        color: $activeTextColor;
+      }
+
+      &:hover > a svg {
+        color: $themeColor;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $menuTextColor;
+        padding: 12px 0;
+        font-size: 1.3em;
+
+        &:hover, &:active {
+          color: $activeTextColor;
+        }
+
+        &:hover svg, &:active svg {
+          color: $themeColor;
+        }
+
+        svg {
+          height: 1.6em;
+          width: 1.6em;
+          font-size: 1.6em;
+          padding-right: 10px;
+          color: #6f7180;
+
+          &:hover {
+            fill: $themeColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
