@@ -1,0 +1,49 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.contactsForm {
+  @include flex(column, flex-start, stretch, nowrap);
+  margin: 50px auto;
+  width: 100%;
+  padding: 35px;
+  background: $activeTextColor;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+  max-width: 550px;
+  row-gap: 10px;
+
+  .formRow {
+    position: relative;
+    margin-bottom: 40px;
+
+    textarea {
+      resize: none;
+      @include formField()
+    }
+
+    input {
+      @include formField()
+    }
+
+    label {
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      color: $menuTextColor;
+      font-size: 1em;
+      font-weight: 300;
+      transform: translateY(-35px);
+      transition: all 0.2s ease;
+    }
+  }
+
+  button {
+    margin: 0 auto;
+    font-size: 1em;
+    background: $themeColor;
+    border: 0;
+    padding: 10px 24px;
+    color: $activeTextColor;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+}

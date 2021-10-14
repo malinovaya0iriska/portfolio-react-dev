@@ -1,0 +1,22 @@
+@import '/src/common/styles/sass/mixins.scss';
+@import '/src/common/styles/sass/variables.scss';
+
+.projectsBlock {
+  min-height: 80vh;
+}
+
+.projectContainer {
+  @include container();
+  @include flex(column, flex-start, flex-start, wrap);
+  row-gap: 50px;
+}
+
+.projects {
+  @include flex(row, space-between, flex-start, wrap);
+  width: 100%;
+  row-gap: 20px;
+}
+
+.title {
+  @include sectionTitle()
+}

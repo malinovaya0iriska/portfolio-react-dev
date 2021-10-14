@@ -1,0 +1,58 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.footerBlock {
+  background: $bgColor;
+  height: 80px;
+
+  .footerContainer {
+    @include flex(column, center, center, wrap);
+    padding: 15px;
+
+    h4 {
+      color: $activeTextColor;
+      font-size: 0.9em;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      svg:hover {
+        fill: #149ddd;
+      }
+    }
+
+    .socialShare {
+      @include flex(row, center, center, wrap);
+      column-gap: 40px;
+
+      a {
+        text-decoration: none;
+
+        svg {
+          width: 1.7em;
+          height: 100%;
+          color: $activeTextColor;
+
+          &:hover {
+            fill: #149ddd;
+          }
+        }
+      }
+    }
+
+    span {
+      color: $menuTextColor;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .footerBlock {
+    height: auto;
+
+    .footerContainer {
+      height: auto;
+      background: $bgColor;
+    }
+  }
+}

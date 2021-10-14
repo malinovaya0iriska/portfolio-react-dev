@@ -1,0 +1,57 @@
+@import 'src/common/styles/sass/mixins';
+@import 'src/common/styles/sass/variables';
+
+.project {
+  @include flex(column, center, center, wrap);
+  background: $themeColor;
+  width: 350px;
+  text-align: center;
+  row-gap: 50px;
+
+  .icon {
+    @include flex(row, center, center, wrap);
+    width: 100%;
+    height: 200px;
+    background-image: url('https://d3kqdc25i4tl0t.cloudfront.net/articles/content/497_449074_management.hero.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+    .overLay {
+      @include flex(column, center, center, wrap);
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .title {
+        @include textStyle($activeTextColor, 1.3em, 600, 2em, normal);
+        text-transform: uppercase;
+      }
+
+      .description {
+
+        @include textStyle($activeTextColor, 1em, 300, 1.6em, normal);
+
+      }
+
+      .previewBtn {
+        margin: 5px auto;
+        font-size: 1em;
+        background: $themeColor;
+        padding: 5px 32px;
+        color: $activeTextColor;
+        border-radius: 4px;
+
+      }
+    }
+  }
+}
