@@ -1,10 +1,10 @@
 import './App.css';
-import {Header} from "./header/Header";
-import {Main} from "./main/Main";
-import {Skills} from "./skills/Skills";
-import {Projects} from "./projects/Projects";
-import {Contacts} from "./contacts/Contacts";
-import {Footer} from "./footer/Footer";
+import {Header} from "./a1-header/Header";
+import {Main} from "./a2-main/Main";
+import {Skills} from "./a3-skills/Skills";
+import {Projects} from "./a4-projects/Projects";
+import {Contacts} from "./a5-contacts/Contacts";
+import {Footer} from "./a6-footer/Footer";
 
 const App = () => {
     return (

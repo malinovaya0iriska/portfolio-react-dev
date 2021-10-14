@@ -1,7 +1,12 @@
+@font-face{
+    font-family: 'Poppins';
 
+    src: url('./assets/fonts/poppins/Poppins-Medium.ttf') format('trueopen');
+}
 html, body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
+    letter-spacing: 1px;
     font-size: 1rem;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -11,7 +16,7 @@ html, body {
     margin: 0 auto;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #272829;
     text-align: left;
     background-color: #fff;
 }
