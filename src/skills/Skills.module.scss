@@ -1,8 +1,10 @@
+@import './src/common/styles/sass/mixins';
+
 .skillsBlock {
   min-height: 100vh;
   background: #f5f8fd;
-  .skillsContainer {
 
+  .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     row-gap: 50px;
@@ -27,24 +29,7 @@
     }
 
     .title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      position: relative;
-      color: #173b6c;
-      font-family: "Raleway", sans-serif;
-
-      &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 50px;
-        height: 3px;
-        background: #149ddd;
-        bottom: 0;
-        left: 0;
-      }
+      @include sectionTitle()
     }
 
   }

@@ -8,6 +8,7 @@
   .footerContainer {
     padding: 15px;
     flex-direction: column;
+    flex-wrap: wrap;
 
     h4 {
       color: $activeTextColor;

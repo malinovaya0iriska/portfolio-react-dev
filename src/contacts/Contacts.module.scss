@@ -1,0 +1,23 @@
+@import './src/common/styles/sass/mixins';
+@import './src/common/styles/sass/variables';
+
+.contactsBlock {
+  background: #f5f8fd;
+  height: 75vh;
+}
+
+.contactsContainer {
+  flex-direction: column;
+
+  .title {
+    @include sectionTitle()
+  }
+  p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+
+
