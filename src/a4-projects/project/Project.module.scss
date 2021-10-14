@@ -18,7 +18,7 @@
 
 
     .overLay {
-      @include flex(column, center, center, wrap);
+      @include flex(column, center, center, nowrap);
       padding: 20px;
       height: 100%;
       width: 100%;

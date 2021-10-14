@@ -40,14 +40,14 @@ export const Projects = () => {
     </li>)
 
     return (
-        <div className={styles.projectsBlock}>
+        <section className={styles.projectsBlock}>
             <div className={styles.projectContainer}>
                 <h2 className={styles.title}>My projects</h2>
                 <ul className={styles.projects}>
                     {mappedProjects}
                 </ul>
             </div>
-        </div>
+        </section>
     );
 };
 
