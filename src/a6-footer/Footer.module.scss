@@ -6,8 +6,9 @@
   height: 80px;
 
   .footerContainer {
-    @include flex(column, center, center, wrap);
+    @include flex(row, space-evenly, center, wrap);
     padding: 15px;
+    text-align: center;
 
     h4 {
       color: $activeTextColor;
@@ -53,6 +54,7 @@
     .footerContainer {
       height: auto;
       background: $bgColor;
+      flex-direction: column;
     }
   }
 }

@@ -12,7 +12,7 @@
 }
 
 .projects {
-  @include flex(row, space-between, flex-start, wrap);
+  @include flex(row, space-around, flex-start, wrap);
   width: 100%;
   row-gap: 20px;
 }
