@@ -1,0 +1,18 @@
+@import './src/common/styles/sass/variables';
+
+.button {
+  margin: 5px auto;
+  font-size: 1em;
+  background: $themeColor;
+  border: 2px solid $themeColor;
+  padding: 10px 34px;
+  color: $activeTextColor;
+  border-radius: 4px;
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    background: $activeTextColor;
+    color: $themeColor;
+    border: 2px solid $themeColor;
+  }
+}
