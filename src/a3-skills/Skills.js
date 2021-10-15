@@ -18,6 +18,7 @@ import {
     TiHtml5
 } from "react-icons/all";
 import {v1} from "uuid";
+import {Title} from "../common/components/Title/Title";
 
 
 export const Skills = () => {
@@ -43,9 +44,9 @@ export const Skills = () => {
         </li>)
 
     return (
-        <section className={styles.skillsBlock}>
+        <section className={styles.skillsBlock} id={'skills'}>
             <div className={styles.skillsContainer}>
-                <h2 className={styles.title}>My skills</h2>
+                <Title text={'My skills'}/>
                 <ul className={styles.skills}>
                     {mappedSkills}
                 </ul>

@@ -1,0 +1,12 @@
+@import 'common/styles/sass/variables';
+
+.App{
+  >section{
+    &:nth-child(n){
+      background-color: #f5f8fd;
+    }
+    &:nth-child(2n){
+      background-color: inherit;
+    }
+  }
+}

@@ -3,7 +3,6 @@
 
 .skillsBlock {
   min-height: 100vh;
-  background: $bgOtherColor;
 
   .skillsContainer {
     @include container();
@@ -22,10 +21,7 @@
         text-align: center;
       }
     }
-
-    .title {
-      @include sectionTitle();
-    }
-
   }
 }
+
+

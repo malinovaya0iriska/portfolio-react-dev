@@ -19,6 +19,7 @@ html, body {
     color: #272829;
     text-align: left;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 
 code {

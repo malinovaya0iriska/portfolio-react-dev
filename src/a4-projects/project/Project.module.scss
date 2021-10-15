@@ -7,12 +7,12 @@
   width: 350px;
   text-align: center;
   row-gap: 50px;
+  box-shadow: 0 4px 15px rgba(5, 5, 6, 0.4);
 
   .icon {
     @include flex(row, center, center, wrap);
     width: 100%;
     height: 200px;
-    background-image: url('https://d3kqdc25i4tl0t.cloudfront.net/articles/content/497_449074_management.hero.jpg');
     background-position: center;
     background-size: cover;
 
@@ -30,6 +30,7 @@
 
       &:hover {
         opacity: 1;
+
       }
 
       .title {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Main.module.scss'
-
+import ReactTypingEffect from 'react-typing-effect';
 
 export const Main = () => {
     return (
@@ -8,10 +8,15 @@ export const Main = () => {
             <div className={styles.mainContainer}>
                 <div className={styles.greeting}>
                     <h2>Ira Marts</h2>
-                    <p>I am <span className="typed"
-                                  data-typed-items="Frontend-Developer, Freelancer, React-Dev">
-                         Frontend-Developer
-                    </span>
+                    <p>I am <span>
+                        <ReactTypingEffect
+                            text={['Frontend-Developer', 'React-Developer', 'Freelancer']}
+                            speed={200}
+                            eraseSpeed={200}
+                            eraseDelay={400}
+                            typingDelay={250}
+                        />
+                        </span>
                     </p>
                 </div>
             </div>

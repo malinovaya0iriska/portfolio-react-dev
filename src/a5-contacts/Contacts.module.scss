@@ -2,17 +2,12 @@
 @import './src/common/styles/sass/variables';
 
 .contactsBlock {
-  background: $bgOtherColor;
   min-height: 75vh;
 }
 
 .contactsContainer {
   @include container();
   @include flex(column, flex-start, flex-start, nowrap);
-
-  .title {
-    @include sectionTitle()
-  }
 
   p {
     font-family: "Poppins", sans-serif;

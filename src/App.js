@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {Header} from "./a1-header/Header";
 import {Main} from "./a2-main/Main";
 import {Skills} from "./a3-skills/Skills";
@@ -8,7 +8,7 @@ import {Footer} from "./a6-footer/Footer";
 
 const App = () => {
     return (
-        <div className="App">
+        <div className={"App"}>
             <Header/>
             <Main/>
             <Skills/>
@@ -17,6 +17,6 @@ const App = () => {
             <Footer/>
         </div>
     );
-}
+};
 
 export default App;

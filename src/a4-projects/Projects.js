@@ -6,6 +6,7 @@ import photo1 from './../assets/img/portfolio-2.jpg'
 import photo2 from './../assets/img/portfolio-4.jpg'
 import photo3 from './../assets/img/portfolio-5.jpg'
 import photo4 from './../assets/img/portfolio-6.jpg'
+import {Title} from "../common/components/Title/Title";
 
 export const Projects = () => {
     const projectsScope = [
@@ -40,9 +41,9 @@ export const Projects = () => {
     </li>)
 
     return (
-        <section className={styles.projectsBlock}>
+        <section className={styles.projectsBlock} id={'projects'}>
             <div className={styles.projectContainer}>
-                <h2 className={styles.title}>My projects</h2>
+                <Title text={'My projects'}/>
                 <ul className={styles.projects}>
                     {mappedProjects}
                 </ul>
