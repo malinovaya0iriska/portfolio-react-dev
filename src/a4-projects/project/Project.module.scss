@@ -43,16 +43,6 @@
         @include textStyle($activeTextColor, 1em, 300, 1.6em, normal);
 
       }
-
-      .previewBtn {
-        margin: 5px auto;
-        font-size: 1em;
-        background: $themeColor;
-        padding: 5px 32px;
-        color: $activeTextColor;
-        border-radius: 4px;
-
-      }
     }
   }
 }

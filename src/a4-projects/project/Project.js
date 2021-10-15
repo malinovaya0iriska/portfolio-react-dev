@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Project.module.scss'
+import {Button} from "../../common/components/Button/Button";
 
 export const Project = ({title, demo, description, img, github}) => {
     return (
@@ -10,8 +11,10 @@ export const Project = ({title, demo, description, img, github}) => {
                         <h3 className={styles.title}>{title}</h3>
                         <p>{description}</p>
                     </div>
-                    <a href={github} className={styles.previewBtn} target="_blank" rel="noreferrer">Code</a>
-                    <a href={demo} className={styles.previewBtn} target="_blank" rel="noreferrer">Demo</a>
+                    <Button text={'Code'}><a href={github} className={styles.previewBtn} target="_blank"
+                                             rel="noreferrer"> </a></Button>
+                    <Button text={'Demo'}><a href={demo} className={styles.previewBtn} target="_blank"
+                                             rel="noreferrer"> </a></Button>
                 </div>
             </div>
         </div>
