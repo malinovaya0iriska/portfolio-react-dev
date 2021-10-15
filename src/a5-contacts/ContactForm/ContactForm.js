@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './ContactForm.module.scss'
+import Fade from 'react-reveal/Fade';
 
 export const ContactForm = () => {
     return (
+        <Fade left>
         <form action={'post'} className={styles.contactsForm}>
             <div className={styles.formRow}>
                 <input type={'text'} id={'name'} required/>
@@ -18,6 +20,7 @@ export const ContactForm = () => {
             </div>
             <button>Send</button>
         </form>
+        </Fade>
     );
 };
 

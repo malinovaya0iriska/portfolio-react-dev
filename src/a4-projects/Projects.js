@@ -7,6 +7,7 @@ import photo2 from './../assets/img/portfolio-4.jpg'
 import photo3 from './../assets/img/portfolio-5.jpg'
 import photo4 from './../assets/img/portfolio-6.jpg'
 import {Title} from "../common/components/Title/Title";
+import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
     const projectsScope = [
@@ -44,9 +45,11 @@ export const Projects = () => {
         <section className={styles.projectsBlock} id={'projects'}>
             <div className={styles.projectContainer}>
                 <Title text={'My projects'}/>
+                <Fade left cascade>
                 <ul className={styles.projects}>
                     {mappedProjects}
                 </ul>
+                </Fade>
             </div>
         </section>
     );

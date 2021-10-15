@@ -11,10 +11,12 @@ import {
     SiCodewars
 } from "react-icons/all";
 import profileImg from './../../assets/img/profile-img.jpg'
+import {Link} from "react-scroll";
 
 export const Nav = () => {
     return (
         <>
+
             <div className={styles.profile}>
                 <img src={profileImg} alt={''} className={styles.profileImg}/>
                 <h1>Ira Marts</h1>
@@ -34,16 +36,58 @@ export const Nav = () => {
                     </a>
                 </div>
             </div>
+            }
             <nav className={styles.nav}>
                 <ul>
-                    <li className={styles.active}><a href={'#home'}><AiOutlineHome/>Home</a></li>
-                    <li><a href={'#skills'}><BiCodeBlock/>Skills</a></li>
-                    <li><a href={'#projects'}><RiBookReadLine/>Projects</a></li>
+                    <li>
+                        <Link activeClass={styles.active}
+                              to={'home'}
+                              spy={true}
+                              smooth={true}
+                              offset={-80}
+                              duration={500}
+                        >
+                            <AiOutlineHome/>Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass={styles.active}
+                              to={'skills'}
+                              spy={true}
+                              smooth={true}
+                              offset={-80}
+                              duration={500}
+                        >
+                            <BiCodeBlock/>Skills
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass={styles.active}
+                              to={'projects'}
+                              spy={true}
+                              smooth={true}
+                              offset={-80}
+                              duration={500}
+                        >
+                            <RiBookReadLine/>Projects
+                        </Link>
+                    </li>
                     {/*<li><a href={'#video'}><BiVideo/>Video</a></li>*/}
-                    <li><a href={'#contact'}><BiEnvelope/>Contact</a></li>
+                    <li>
+                        <Link activeClass={styles.active}
+                              to={'contact'}
+                              spy={true}
+                              smooth={true}
+                              offset={-80}
+                              duration={500}
+                        >
+                            <BiEnvelope/>Contact
+                        </Link>
+                    </li>
                 </ul>
             </nav>
+
         </>
     );
-};
+}
 

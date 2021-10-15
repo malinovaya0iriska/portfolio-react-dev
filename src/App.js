@@ -7,17 +7,24 @@ import {Contacts} from "./a5-contacts/Contacts";
 import {Footer} from "./a6-footer/Footer";
 import {AiOutlineRocket} from "react-icons/all";
 
+import {Link} from "react-scroll";
+
 const App = () => {
     return (
-        <div className={"App"}>
+        <div className={'App'}>
             <Header/>
             <Main/>
             <Skills/>
             <Projects/>
             <Contacts/>
-            <a href={"#"} className={'backUp'}>
-                <AiOutlineRocket/>
-            </a>
+            <Link className={'backUp'}
+                  to={'home'}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+            > <AiOutlineRocket/>
+            </Link>
             <Footer/>
         </div>
     );

@@ -4,11 +4,11 @@ import ReactTypingEffect from 'react-typing-effect';
 
 export const Main = () => {
     return (
-        <section className={styles.mainBlock} id={'#home'}>
+        <section className={styles.mainBlock} id={'home'}>
             <div className={styles.mainContainer}>
                 <div className={styles.greeting}>
                     <h2>Ira Marts</h2>
-                    <p>I am <span>
+                    <div className={styles.message}>I am <span>
                         <ReactTypingEffect
                             text={['Frontend-Developer', 'React-Developer', 'Freelancer']}
                             speed={200}
@@ -17,7 +17,7 @@ export const Main = () => {
                             typingDelay={250}
                         />
                         </span>
-                    </p>
+                    </div>
                 </div>
             </div>
         </section>
