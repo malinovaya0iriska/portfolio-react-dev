@@ -1,6 +1,15 @@
 import React from 'react';
 import styles from './Nav.module.scss'
-import {AiOutlineHome, BiCodeBlock, BiEnvelope, BiVideo, RiBookReadLine} from "react-icons/all";
+import {
+    AiOutlineHome,
+    BiCodeBlock,
+    BiEnvelope,
+    BsGithub,
+    FaLinkedinIn,
+    GrGooglePlus,
+    RiBookReadLine,
+    SiCodewars
+} from "react-icons/all";
 import profileImg from './../../assets/img/profile-img.jpg'
 
 export const Nav = () => {
@@ -9,6 +18,21 @@ export const Nav = () => {
             <div className={styles.profile}>
                 <img src={profileImg} alt={''} className={styles.profileImg}/>
                 <h1>Ira Marts</h1>
+                <div className={styles.socialLinks}>
+                    <a href={'https://www.instagram.com/iriskamalinka/'} target="_blank" rel="noreferrer">
+                        <SiCodewars/>
+                    </a>
+                    <a href={'mailto:martsulevich.irina@gmail.com'}>
+                        <GrGooglePlus/>
+                    </a>
+                    <a href={'https://www.linkedin.com/in/irina-martsulevich-342073217/'} target="_blank"
+                       rel="noreferrer">
+                        <FaLinkedinIn/>
+                    </a>
+                    <a href="https://github.com/malinovaya0iriska" target="_blank" rel="noreferrer">
+                        <BsGithub/>
+                    </a>
+                </div>
             </div>
             <nav className={styles.nav}>
                 <ul>

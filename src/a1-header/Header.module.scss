@@ -1,6 +1,29 @@
 @import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
+.mobileNav {
+  @media (min-width: 1199px) {
+    display: none;
+  }
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+
+  svg {
+    font-size: 2em;
+    color: $themeColor;
+  }
+}
+
 .header {
   height: 80px;
   background: $bgColor;
@@ -11,9 +34,17 @@
   width: 100%;
   z-index: 9997;
 
+  @media (max-width: 1199px) {
+    max-width: 540px;
+    height: 100vh;
+  }
+
   .headerContainer {
     @include container();
-    @include flex(row,space-between,flex-start,nowrap);
+    @include flex(row, space-between, flex-start, nowrap);
     padding: 0;
+    @media (max-width: 1199px) {
+      @include flex(column, flex-start, flex-start, nowrap);
+    }
   }
 }

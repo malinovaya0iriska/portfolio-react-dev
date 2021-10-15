@@ -7,9 +7,12 @@ export const Footer = () => {
         <div className={styles.footerBlock}>
             <div className={styles.footerContainer}>
                 <ul className={styles.socialShare}>
-                    <li><a href={'https://github.com/malinovaya0iriska'}><VscGithub/></a></li>
-                    <li><a href={'https://www.codewars.com/users/malinovaya0iriska'}><SiCodewars/></a></li>
-                    <li><a href={'https://www.linkedin.com/in/irina-martsulevich-342073217/'}><BsLinkedin/></a></li>
+                    <li><a href={'https://github.com/malinovaya0iriska'} target="_blank"
+                           rel="noreferrer"><VscGithub/></a></li>
+                    <li><a href={'https://www.codewars.com/users/malinovaya0iriska'} target="_blank"
+                           rel="noreferrer"><SiCodewars/></a></li>
+                    <li><a href={'https://www.linkedin.com/in/irina-martsulevich-342073217/'} target="_blank"
+                           rel="noreferrer"><BsLinkedin/></a></li>
                 </ul>
                 <div>
                     <h4>Made with <SiGithubsponsors/> by Iryna Martsulevich</h4>
