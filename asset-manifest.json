@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-react-dev/static/css/main.06ef36ac.chunk.css",
-    "main.js": "/portfolio-react-dev/static/js/main.6206dc0f.chunk.js",
-    "main.js.map": "/portfolio-react-dev/static/js/main.6206dc0f.chunk.js.map",
+    "main.css": "/portfolio-react-dev/static/css/main.f19d9bad.chunk.css",
+    "main.js": "/portfolio-react-dev/static/js/main.d1b9c118.chunk.js",
+    "main.js.map": "/portfolio-react-dev/static/js/main.d1b9c118.chunk.js.map",
     "runtime-main.js": "/portfolio-react-dev/static/js/runtime-main.afee7a73.js",
     "runtime-main.js.map": "/portfolio-react-dev/static/js/runtime-main.afee7a73.js.map",
-    "static/js/2.a3a01b48.chunk.js": "/portfolio-react-dev/static/js/2.a3a01b48.chunk.js",
-    "static/js/2.a3a01b48.chunk.js.map": "/portfolio-react-dev/static/js/2.a3a01b48.chunk.js.map",
+    "static/js/2.12631a3d.chunk.js": "/portfolio-react-dev/static/js/2.12631a3d.chunk.js",
+    "static/js/2.12631a3d.chunk.js.map": "/portfolio-react-dev/static/js/2.12631a3d.chunk.js.map",
     "static/js/3.b2e3b6c2.chunk.js": "/portfolio-react-dev/static/js/3.b2e3b6c2.chunk.js",
     "static/js/3.b2e3b6c2.chunk.js.map": "/portfolio-react-dev/static/js/3.b2e3b6c2.chunk.js.map",
     "index.html": "/portfolio-react-dev/index.html",
-    "static/css/main.06ef36ac.chunk.css.map": "/portfolio-react-dev/static/css/main.06ef36ac.chunk.css.map",
-    "static/js/2.a3a01b48.chunk.js.LICENSE.txt": "/portfolio-react-dev/static/js/2.a3a01b48.chunk.js.LICENSE.txt",
+    "static/css/main.f19d9bad.chunk.css.map": "/portfolio-react-dev/static/css/main.f19d9bad.chunk.css.map",
+    "static/js/2.12631a3d.chunk.js.LICENSE.txt": "/portfolio-react-dev/static/js/2.12631a3d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio-react-dev/static/media/Poppins-Medium.9e1bb626.ttf",
     "static/media/Nav.module.scss": "/portfolio-react-dev/static/media/Raleway-Black.eef1ff81.ttf",
     "static/media/Main.module.scss": "/portfolio-react-dev/static/media/main-bg.29b21ca4.jpg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.afee7a73.js",
-    "static/js/2.a3a01b48.chunk.js",
-    "static/css/main.06ef36ac.chunk.css",
-    "static/js/main.6206dc0f.chunk.js"
+    "static/js/2.12631a3d.chunk.js",
+    "static/css/main.f19d9bad.chunk.css",
+    "static/js/main.d1b9c118.chunk.js"
   ]
 }
