@@ -1,7 +1,13 @@
 @import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
-.mobileNav {
+header.mobileHeader {
+  @media (max-width: 1199px) {
+    transform: translate(0, 0);
+  }
+}
+
+.mobileNavBtn {
   @media (min-width: 1199px) {
     display: none;
   }
@@ -35,16 +41,18 @@
   z-index: 9997;
 
   @media (max-width: 1199px) {
-    max-width: 540px;
+    max-width: 420px;
     height: 100vh;
+    transform: translate(-420px, 0);
+    transition: all 800ms ease-in-out;
   }
+}
 
-  .headerContainer {
-    @include container();
-    @include flex(row, space-between, flex-start, nowrap);
-    padding: 0;
-    @media (max-width: 1199px) {
-      @include flex(column, flex-start, flex-start, nowrap);
-    }
+.headerContainer {
+  @include container();
+  @include flex(row, space-between, flex-start, nowrap);
+  padding: 0;
+  @media (max-width: 1199px) {
+    @include flex(column, flex-start, flex-start, nowrap);
   }
 }

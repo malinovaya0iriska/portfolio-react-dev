@@ -1,15 +1,19 @@
 @import './src/common/styles/sass/variables';
 @import './src/common/styles/sass/mixins';
-
+.test{
+  height: max-content;
+  min-height: 50px;
+  border: 1px solid;
+}
 .contactsForm {
   @include flex(column, flex-start, stretch, nowrap);
   margin: 50px auto;
   width: 100%;
-  padding: 35px;
+  padding: 45px;
   background: $activeTextColor;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
   max-width: 550px;
-  row-gap: 10px;
+  row-gap: 15px;
 
   .formRow {
     position: relative;

@@ -1,20 +1,16 @@
 @import './src/common/styles/sass/mixins';
 @import './src/common/styles/sass/variables';
 
-.contactsBlock {
-  min-height: 85vh;
-}
-
-.contactsContainer {
-  @include container();
-  @include flex(column, flex-start, flex-start, nowrap);
-
-  p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    font-weight: 500;
+  .contactsContainer {
+    @include container();
+    @include flex(column, flex-start, flex-start, nowrap);
+    min-height: 80vh;
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
   }
-}
 
 
 

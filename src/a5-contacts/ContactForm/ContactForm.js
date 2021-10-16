@@ -17,6 +17,7 @@ export const ContactForm = () => {
                 </div>
                 <div className={styles.formRow}>
                     <textarea rows={1} id={'text'} required/>
+                  {/*  <div contentEditable={true} className={styles.test}>  </div>*/}
                     <label htmlFor={'text'}>Enter message</label>
                 </div>
                 <Button text={'Send'}/>
