@@ -4,7 +4,7 @@
   .contactsContainer {
     @include container();
     @include flex(column, flex-start, flex-start, nowrap);
-    min-height: 80vh;
+    min-height: 85vh;
     p {
       font-family: "Poppins", sans-serif;
       font-size: 1.2em;

@@ -18,7 +18,7 @@ export const Header = () => {
             <header className={headerClass}>
                 <div className={styles.headerContainer}>
                     <Nav/>
-                    <BurgerNav menu={menu} onClickHandler={onClickHandler}/>
+                    <BurgerNav onClick={onClickHandler}/>
                 </div>
             </header>
         </>
