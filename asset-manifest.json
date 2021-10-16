@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react-dev/static/css/main.f19d9bad.chunk.css",
+    "main.css": "/portfolio-react-dev/static/css/main.8d73aa51.chunk.css",
     "main.js": "/portfolio-react-dev/static/js/main.d1b9c118.chunk.js",
     "main.js.map": "/portfolio-react-dev/static/js/main.d1b9c118.chunk.js.map",
     "runtime-main.js": "/portfolio-react-dev/static/js/runtime-main.afee7a73.js",
@@ -10,7 +10,7 @@
     "static/js/3.b2e3b6c2.chunk.js": "/portfolio-react-dev/static/js/3.b2e3b6c2.chunk.js",
     "static/js/3.b2e3b6c2.chunk.js.map": "/portfolio-react-dev/static/js/3.b2e3b6c2.chunk.js.map",
     "index.html": "/portfolio-react-dev/index.html",
-    "static/css/main.f19d9bad.chunk.css.map": "/portfolio-react-dev/static/css/main.f19d9bad.chunk.css.map",
+    "static/css/main.8d73aa51.chunk.css.map": "/portfolio-react-dev/static/css/main.8d73aa51.chunk.css.map",
     "static/js/2.12631a3d.chunk.js.LICENSE.txt": "/portfolio-react-dev/static/js/2.12631a3d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio-react-dev/static/media/Poppins-Medium.9e1bb626.ttf",
     "static/media/Nav.module.scss": "/portfolio-react-dev/static/media/Raleway-Black.eef1ff81.ttf",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.afee7a73.js",
     "static/js/2.12631a3d.chunk.js",
-    "static/css/main.f19d9bad.chunk.css",
+    "static/css/main.8d73aa51.chunk.css",
     "static/js/main.d1b9c118.chunk.js"
   ]
 }
