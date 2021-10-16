@@ -1,0 +1,114 @@
+@import './../../common/styles/sass/variables';
+@import './../../common/styles/sass/mixins';
+
+@font-face {
+  font-family: Raleway_Black;
+  src: url("./../../assets/fonts/raleway/static/Raleway-Black.ttf") format('trueopen');
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./../../assets/fonts/poppins/Poppins-SemiBold.ttf") format('trueopen');
+}
+
+.burgerNav {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+
+.profile {
+  margin: 25px auto;
+  @include flex(column, center, center, wrap);
+
+  .profileImg {
+    width: 100%;
+    max-width: 145px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    height: auto;
+  }
+
+  h1 {
+    color: $activeTextColor;
+    font-size: 2em;
+    margin: 15px;
+    padding: 0;
+    font-weight: 600;
+    text-align-last: center;
+    font-family: Poppins, sans-serif;
+  }
+
+  .socialLinks {
+    @include flex(row, space-around, space-between, wrap);
+    gap: 15px;
+
+    a {
+      font-size: 1.4em;
+      display: inline-block;
+      background: $mainTextColor;
+      color: $bgThirdColor;
+      line-height: 1;
+      padding: 10px 0;
+      border-radius: 50%;
+      text-align: center;
+      width: 46px;
+      height: 46px;
+      transition: 0.3s;
+
+      &:hover {
+        background: $themeColor;
+        color: $bgThirdColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+
+  ul {
+    @include flex(column, space-between, flex-start, wrap);
+    height: 100%;
+
+
+    li {
+      &:hover > a {
+        color: $activeTextColor;
+      }
+
+      &:hover > a svg {
+        color: $themeColor;
+      }
+
+      .active {
+        color: $activeTextColor;
+
+        svg {
+          color: $themeColor;
+        }
+      }
+
+      a {
+        @include flex(row, space-between, center, wrap);
+        color: $menuTextColor;
+        padding: 12px 0;
+        font-size: 1.3em;
+
+        svg {
+          height: 1.6em;
+          width: 1.6em;
+          font-size: 1.6em;
+          padding-right: 10px;
+          color: #6f7180;
+
+        }
+      }
+    }
+  }
+}
+
+
+
