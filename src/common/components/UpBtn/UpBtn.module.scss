@@ -1,0 +1,29 @@
+@import './src/common/styles/sass/variables';
+
+.backUp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  right: 25px;
+  bottom: 25px;
+  border: 2px solid $themeColor;
+  background: $themeColor;
+  color: $bgThirdColor;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+
+  svg {
+    font-size: 2.2em;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+  }
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    background: $activeTextColor;
+    color: $themeColor;
+    border: 2px solid $themeColor;
+  }
+}
