@@ -8,6 +8,10 @@
   text-align: center;
   row-gap: 50px;
   box-shadow: 0 4px 15px rgba(5, 5, 6, 0.4);
+  @media (max-width: 600px){
+    width: 320px;
+  }
+
 
   .icon {
     @include flex(row, center, center, wrap);

@@ -11,7 +11,7 @@
 
 
     .skills {
-      @include flex(row, space-between, flex-start, wrap);
+      @include flex(row, space-around, flex-start, wrap);
       width: 100%;
       gap: 50px;
 
