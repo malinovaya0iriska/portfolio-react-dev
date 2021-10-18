@@ -1,3 +1,4 @@
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {Header} from "./a1-header/Header";
 import {Main} from "./a2-main/Main";
@@ -5,11 +6,20 @@ import {Skills} from "./a3-skills/Skills";
 import {Projects} from "./a4-projects/Projects";
 import {Contacts} from "./a5-contacts/Contacts";
 import {Footer} from "./a6-footer/Footer";
-import {AiOutlineRocket} from "react-icons/all";
+import {UpBtn} from "./common/components/UpBtn/UpBtn";
 
-import {Link} from "react-scroll";
 
 const App = () => {
+    let [isVisible, setIsVisible] = useState(false)
+    useEffect(() => {
+        document.addEventListener("scroll", function (e) {
+            if (window.pageYOffset > 150) {
+                setIsVisible(true)
+            } else {
+                setIsVisible(false)
+            }
+        })
+    })
     return (
         <div className={'App'}>
             <Header/>
@@ -17,14 +27,7 @@ const App = () => {
             <Skills/>
             <Projects/>
             <Contacts/>
-            <Link className={'backUp'}
-                  to={'home'}
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-            > <AiOutlineRocket/>
-            </Link>
+            <UpBtn isVisible={isVisible}/>
             <Footer/>
         </div>
     );
