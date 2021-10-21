@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.scss'
-import {AiOutlineHome, BiCodeBlock, BiEnvelope, RiBookReadLine} from "react-icons/all";
+import {AiOutlineHome, BiCodeBlock, BiEnvelope, RiBookReadLine, BiUser} from "react-icons/all";
 import {Link} from "react-scroll";
 
 export const Nav = () => {
@@ -16,6 +16,17 @@ export const Nav = () => {
                           duration={500}
                     >
                         <AiOutlineHome/>Home
+                    </Link>
+                </li>
+                <li>
+                    <Link activeClass={styles.active}
+                          to={'about'}
+                          spy={true}
+                          smooth={true}
+                          offset={-80}
+                          duration={500}
+                    ><BiUser/>
+                        About
                     </Link>
                 </li>
                 <li>

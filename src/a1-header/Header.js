@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Nav} from "./nav/Nav";
 import styles from './Header.module.scss'
 import {BurgerNav} from "./burgerNav/BurgerNav";
 import {AiOutlineClose, CgMenuRight} from "react-icons/all";
 
-export const Header = () => {
-    const [menu, setMenu] = useState(false)
+export const Header = ({menu, setMenu}) => {
+    
     const onClickHandler = () => {
         setMenu(!menu)
     }

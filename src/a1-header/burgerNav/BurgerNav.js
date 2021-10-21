@@ -8,7 +8,8 @@ import {
     FaLinkedinIn,
     GrGooglePlus,
     RiBookReadLine,
-    SiCodewars
+    SiCodewars,
+    BiUser
 } from "react-icons/all";
 import profileImg from './../../assets/img/profile-img.jpg'
 import {Link} from "react-scroll";
@@ -48,6 +49,18 @@ export const BurgerNav = ({onClick}) => {
                               onClick={onClick}
                         >
                             <AiOutlineHome/>Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass={styles.active}
+                              to={'about'}
+                              spy={true}
+                              smooth={true}
+                              offset={-80}
+                              duration={700}
+                              onClick={onClick}
+                        ><BiUser/>
+                            About
                         </Link>
                     </li>
                     <li>

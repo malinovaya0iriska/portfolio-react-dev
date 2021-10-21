@@ -1,0 +1,60 @@
+@import './src/common/styles/sass/mixins';
+@import './src/common/styles/sass/variables';
+
+
+.presentationBlock {
+  min-height: 60vh;
+
+  .aboutContainer {
+    @include container();
+    @include flex(column, flex-start, flex-start, wrap);
+
+    p {
+      font-size: 1em;
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+
+    .description {
+      @include flex(row, space-evenly, flex-start, wrap);
+      margin: 15px 30px 15px 0;
+
+      .photo {
+        max-width: 310px;
+       width: 30%;
+        margin: 20px;
+        @media (max-width: 1200px){
+          width: 75%;
+        }
+      }
+      .info{
+        margin: 20px;
+        @include flex(column, flex-start, flex-start, nowrap);
+        h4{
+          font-weight: 700;
+          font-size: 1.7em;
+          color: $titleTextColor;
+        }
+        p{
+          font-family: Poppins-italic;
+          font-style: italic;
+          font-size: 1.2em;
+        }
+        ul {
+          @include flex(column, flex-start, flex-start, nowrap);
+          align-self: center;
+          padding: 20px 0;
+          li{
+            padding-bottom: 10px;
+            svg{
+              font-size: 1.5em;
+              padding-right: 5px;
+              color: $themeColor;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}

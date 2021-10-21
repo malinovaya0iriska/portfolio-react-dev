@@ -47,7 +47,6 @@ export const Skills = () => {
     return (
         <section className={styles.skillsBlock} id={'skills'}>
             <div className={styles.skillsContainer}>
-
                 <Title text={'My skills'}/>
                 <Fade left cascade>
                 <ul className={styles.skills}>

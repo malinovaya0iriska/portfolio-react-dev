@@ -1,6 +1,6 @@
 import styles from './UpBtn.module.scss'
 import {Link} from "react-scroll";
-import {AiOutlineRocket} from "react-icons/all";
+import {SiApacherocketmq} from "react-icons/all";
 import React from "react";
 
 export const UpBtn = ({isVisible}) => {
@@ -12,7 +12,7 @@ export const UpBtn = ({isVisible}) => {
                                 smooth={true}
                                 offset={-80}
                                 duration={500}
-            > <AiOutlineRocket/>
+            > <SiApacherocketmq/>
             </Link>}
         </>
     )
