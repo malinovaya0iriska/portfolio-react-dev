@@ -46,15 +46,16 @@ export const ContactForm = () => {
         <Fade left>
             <form onSubmit={sendEmail} className={styles.contactsForm}>
                 <div className={styles.formRow}>
-                    <input type={'text'} name={'name'} required/>
+                    <input type={'text'} id={'name'} name={'name'} required/>
                     <label htmlFor={'name'}>Your name</label>
                 </div>
                 <div className={styles.formRow}>
-                    <input type={'text'} name={'email'} required/>
+                    <input type={'text'} id={'email'} name={'email'} required/>
                     <label htmlFor={'email'}>Your Email</label>
                 </div>
                 <div className={styles.formRow}>
-                    <textarea rows={row} id={'text'} onChange={OnChangeHandler} name={'message'} required/>
+                    <textarea rows={row} id={'text'} onChange={OnChangeHandler} name={'message'}
+                              required/>
                     <label htmlFor={'text'}>Enter message</label>
                 </div>
                 <Button type={'submit'} text={'Send'}/>

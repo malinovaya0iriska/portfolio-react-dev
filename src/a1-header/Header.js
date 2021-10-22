@@ -12,7 +12,7 @@ export const Header = ({menu, setMenu}) => {
     const headerClass = `${styles.header} ${menu ? styles.mobileHeader : ''}`
     return (
         <>
-            <button onClick={onClickHandler} type={'button'} className={styles.mobileNavBtn}>
+            <button onClick={onClickHandler} name={'menu'} type={'button'} className={styles.mobileNavBtn}>
                 {menu ? <AiOutlineClose/> : <CgMenuRight/>}
             </button>
             <header className={headerClass}>
