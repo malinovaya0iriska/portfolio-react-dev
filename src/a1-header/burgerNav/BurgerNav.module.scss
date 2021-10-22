@@ -29,7 +29,7 @@
     border-radius: 50%;
     height: auto;
     @media (max-width: 400px) {
-      max-width: 105px;
+     display: none;
     }
   }
 
@@ -74,9 +74,7 @@
 
   ul {
     @include flex(column, space-between, flex-start, wrap);
-    height: 100%;
-
-
+    
     li {
       &:hover > a {
         color: $activeTextColor;
