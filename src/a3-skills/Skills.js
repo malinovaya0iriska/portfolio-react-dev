@@ -19,7 +19,6 @@ import {
 } from "react-icons/all";
 import {v1} from "uuid";
 import {Title} from "../common/components/Title/Title";
-import Fade from 'react-reveal/Fade';
 
 
 export const Skills = () => {
@@ -48,11 +47,9 @@ export const Skills = () => {
         <section className={styles.skillsBlock} id={'skills'}>
             <div className={styles.skillsContainer}>
                 <Title text={'My skills'}/>
-                <Fade left cascade>
                 <ul className={styles.skills}>
                     {mappedSkills}
                 </ul>
-                </Fade>
             </div>
         </section>
     );
