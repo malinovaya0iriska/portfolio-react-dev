@@ -14,7 +14,6 @@
 .burgerNav {
   @media (min-width: 1200px) {
     display: none;
-    height: 100vh;
   }
 }
 
@@ -29,7 +28,7 @@
     border-radius: 50%;
     height: auto;
     @media (max-width: 400px) {
-     display: none;
+      display: none;
     }
   }
 
@@ -45,9 +44,10 @@
 
   .socialLinks {
     @include flex(row, space-around, space-between, wrap);
-    gap: 15px;
+    gap: 10px;
 
     a {
+      margin: 0 5px;
       font-size: 1.4em;
       display: inline-block;
       background: $mainTextColor;
@@ -65,15 +65,22 @@
         color: $bgThirdColor;
         text-decoration: none;
       }
+
+      span {
+        opacity: 0;
+        font-size: 0.5em;
+      }
     }
   }
 }
+
 
 .nav {
   width: 100%;
 
   ul {
-    @include flex(column, space-between, flex-start, wrap);
+    max-height: 50vh;
+     @include flex(column, space-between, flex-start, nowrap);
 
     li {
       &:hover > a {
@@ -95,8 +102,11 @@
       a {
         @include flex(row, space-between, center, wrap);
         color: $menuTextColor;
-        padding: 12px 0;
+        padding: 10px 0;
         font-size: 1.3em;
+        @media (max-width: 400px) {
+          padding: 3px 0;
+        }
 
         svg {
           height: 1.6em;

@@ -23,26 +23,30 @@
 
     .socialShare {
       @include flex(row, center, center, wrap);
-      column-gap: 40px;
+      column-gap: 30px;
 
-      a {
-        text-decoration: none;
+      li {
+        margin: 10px;
 
-        svg {
-          width: 1.7em;
-          height: 100%;
-          color: $activeTextColor;
+        a {
+          text-decoration: none;
 
-          &:hover {
-            fill: #149ddd;
+          svg {
+            width: 1.7em;
+            height: 100%;
+            color: $activeTextColor;
+
+            &:hover {
+              fill: #149ddd;
+            }
           }
         }
       }
-    }
 
-    span {
-      color: $menuTextColor;
-      font-size: 0.8em;
+      span {
+        color: $menuTextColor;
+        font-size: 0.8em;
+      }
     }
   }
 }

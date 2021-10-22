@@ -30,7 +30,7 @@
       .info{
         margin: 20px;
         @include flex(column, flex-start, flex-start, nowrap);
-        h4{
+        h3{
           font-weight: 700;
           font-size: 1.7em;
           color: $titleTextColor;

@@ -35,7 +35,7 @@ export const Presentation = () => {
                         <div className={styles.info}>
 
                             <Fade right>
-                                <h4> Web Developer</h4>
+                                <h3> Web Developer</h3>
                                 <p>
                                     I like to create UI and contemplate the result of my work.
                                 </p>

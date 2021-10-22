@@ -5,6 +5,7 @@
   @include flex(column, center, center, wrap);
   background: $themeColor;
   width: 400px;
+  margin: 5px;
   text-align: center;
   row-gap: 50px;
   box-shadow: 0 4px 15px rgba(5, 5, 6, 0.4);

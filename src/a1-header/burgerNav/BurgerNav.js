@@ -23,17 +23,17 @@ export const BurgerNav = ({onClick}) => {
                 <h1>Ira Marts</h1>
                 <div className={styles.socialLinks}>
                     <a href={'https://www.instagram.com/iriskamalinka/'} target="_blank" rel="noreferrer">
-                        <SiCodewars/>
+                        <SiCodewars/><span>Codewars</span>
                     </a>
                     <a href={'mailto:martsulevich.irina@gmail.com'}>
-                        <GrGooglePlus/>
+                        <GrGooglePlus/><span>Gmail</span>
                     </a>
                     <a href={'https://www.linkedin.com/in/irina-martsulevich-342073217/'} target="_blank"
                        rel="noreferrer">
-                        <FaLinkedinIn/>
+                        <FaLinkedinIn/><span>LinkedIn</span>
                     </a>
                     <a href="https://github.com/malinovaya0iriska" target="_blank" rel="noreferrer">
-                        <BsGithub/>
+                        <BsGithub/><span>Github</span>
                     </a>
                 </div>
             </div>

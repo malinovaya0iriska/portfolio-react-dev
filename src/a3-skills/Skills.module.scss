@@ -7,13 +7,13 @@
   .skillsContainer {
     @include container();
     @include flex(column, flex-start, flex-start, wrap);
-    row-gap: 50px;
+    row-gap: 20px;
 
 
     .skills {
       @include flex(row, space-around, flex-start, wrap);
       width: 100%;
-      gap: 50px;
+      gap: 30px;
 
       li {
         @include flex(column, center, center, wrap);
