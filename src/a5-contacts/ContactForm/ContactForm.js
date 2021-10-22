@@ -10,7 +10,7 @@ export const ContactForm = () => {
     const successText = 'Thank you, the message has been sent successfully! I will contact you at the soonest possible time'
     const errorText = 'Sorry, something is wrong. I can\'t receive you message. Try another way to contact me'
 
-    const [message, setMessage] = useState(errorText)
+    const [message, setMessage] = useState(null)
 
     /*editable textarea*/
     let [row, setRows] = useState(1)
