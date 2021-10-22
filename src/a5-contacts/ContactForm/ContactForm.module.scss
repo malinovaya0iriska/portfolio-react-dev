@@ -1,10 +1,6 @@
 @import './src/common/styles/sass/variables';
 @import './src/common/styles/sass/mixins';
-.test{
-  height: max-content;
-  min-height: 50px;
-  border: 1px solid;
-}
+
 .contactsForm {
   @include flex(column, flex-start, stretch, nowrap);
   margin: 50px auto;
@@ -38,5 +34,20 @@
       transform: translateY(-35px);
       transition: all 0.2s ease;
     }
+  }
+}
+
+.helperText {
+  margin: 0 auto;
+  border: 1px solid $themeColor;
+  background-color: $bgThirdColor;
+  padding: 10px;
+  transition: all 0.7s ease;
+
+  p {
+    text-align: center;
+    color: $themeColor;
+    font-weight: bolder;
+    line-height: 1.5em;
   }
 }

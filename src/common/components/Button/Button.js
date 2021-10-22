@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Button.module.scss'
 
-export const Button = ({text}) => {
+export const Button = ({text, type}) => {
     return (
-        <button className={styles.button}>{text}</button>
+        <button type={type} className={styles.button}>{text}</button>
     );
-};
+}
 
