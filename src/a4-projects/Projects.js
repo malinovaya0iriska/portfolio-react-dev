@@ -16,19 +16,32 @@ export const Projects = () => {
             title: 'Todolist',
             description: 'TS, Redux, RestAPI, Thunk,Material UI, Unit Tests',
             img: photo1,
-            demo: '',
-            github: 'https://github.com/MariaSyrokvash/myPortfolio/tree/master/src/components/a4-Portfolio/Projects',
+            demo: 'https://malinovaya0iriska.github.io/the-best-todo',
+            github: 'https://github.com/malinovaya0iriska/the-best-todo',
         },
         {
             id: v1(),
-            title: 'Todolist',
-            description: 'TS, Redux, RestAPI, Thunk,Material UI',
+            title: 'Network',
+            description: 'TS, Redux, RestAPI, Thunk',
             img: photo2,
             demo: '',
-            github: '',
+            github: 'https://github.com/malinovaya0iriska/social-net',
         },
-        {id: v1(), title: 'Todolist', description: '', img: photo3, demo: '', github: '',},
-        {id: v1(), title: 'Todolist', description: '', img: photo4, demo: '', github: '',},
+        {
+            id: v1(),
+            title: 'Simple Counter',
+            img: photo3,
+            demo: 'https://malinovaya0iriska.github.io/simple-counter',
+            github: 'https://github.com/malinovaya0iriska/simple-counter',
+        },
+        {
+            id: v1(),
+            title: 'Game: Catch the Dot',
+            description: '',
+            img: photo4,
+            demo: 'https://malinovaya0iriska.github.io/game-cath-dott/',
+            github: 'https://github.com/malinovaya0iriska/game-cath-dott',
+        },
     ]
 
 
@@ -46,9 +59,9 @@ export const Projects = () => {
             <div className={styles.projectContainer}>
                 <Title text={'My projects'}/>
                 <Fade left cascade>
-                <ul className={styles.projects}>
-                    {mappedProjects}
-                </ul>
+                    <ul className={styles.projects}>
+                        {mappedProjects}
+                    </ul>
                 </Fade>
             </div>
         </section>
