@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-react-dev/static/css/main.0c460915.chunk.css",
-    "main.js": "/portfolio-react-dev/static/js/main.4e71e5f8.chunk.js",
-    "main.js.map": "/portfolio-react-dev/static/js/main.4e71e5f8.chunk.js.map",
+    "main.js": "/portfolio-react-dev/static/js/main.e4bb7d8d.chunk.js",
+    "main.js.map": "/portfolio-react-dev/static/js/main.e4bb7d8d.chunk.js.map",
     "runtime-main.js": "/portfolio-react-dev/static/js/runtime-main.766b7727.js",
     "runtime-main.js.map": "/portfolio-react-dev/static/js/runtime-main.766b7727.js.map",
     "static/js/2.62d5fa32.chunk.js": "/portfolio-react-dev/static/js/2.62d5fa32.chunk.js",
@@ -14,17 +14,17 @@
     "static/js/2.62d5fa32.chunk.js.LICENSE.txt": "/portfolio-react-dev/static/js/2.62d5fa32.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio-react-dev/static/media/Poppins-Medium.9e1bb626.ttf",
     "static/media/Nav.module.scss": "/portfolio-react-dev/static/media/Raleway-Black.eef1ff81.ttf",
+    "static/media/counter.e6700e9d.jpg": "/portfolio-react-dev/static/media/counter.e6700e9d.jpg",
     "static/media/Main.module.scss": "/portfolio-react-dev/static/media/main-bg.29b21ca4.jpg",
-    "static/media/portfolio-2.bb58c286.jpg": "/portfolio-react-dev/static/media/portfolio-2.bb58c286.jpg",
-    "static/media/portfolio-4.e99517ec.jpg": "/portfolio-react-dev/static/media/portfolio-4.e99517ec.jpg",
-    "static/media/portfolio-5.2dcd6723.jpg": "/portfolio-react-dev/static/media/portfolio-5.2dcd6723.jpg",
-    "static/media/portfolio-6.c6b9e190.jpg": "/portfolio-react-dev/static/media/portfolio-6.c6b9e190.jpg",
-    "static/media/profile-img.44e5fef5.jpg": "/portfolio-react-dev/static/media/profile-img.44e5fef5.jpg"
+    "static/media/portfolio-1.a00360a7.jpg": "/portfolio-react-dev/static/media/portfolio-1.a00360a7.jpg",
+    "static/media/portfolio-3.9c95476a.jpg": "/portfolio-react-dev/static/media/portfolio-3.9c95476a.jpg",
+    "static/media/profile-img.44e5fef5.jpg": "/portfolio-react-dev/static/media/profile-img.44e5fef5.jpg",
+    "static/media/vertical_slider.55a3dca8.jpg": "/portfolio-react-dev/static/media/vertical_slider.55a3dca8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.766b7727.js",
     "static/js/2.62d5fa32.chunk.js",
     "static/css/main.0c460915.chunk.css",
-    "static/js/main.4e71e5f8.chunk.js"
+    "static/js/main.e4bb7d8d.chunk.js"
   ]
 }
