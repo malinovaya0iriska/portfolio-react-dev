@@ -25,7 +25,7 @@ export const Projects = () => {
             title: 'Network',
             description: 'TS, Redux, RestAPI, Thunk',
             img: photo2,
-            demo: '',
+            demo: 'https://malinovaya0iriska.github.io/social-net/',
             github: 'https://github.com/malinovaya0iriska/social-net',
         },
         {
