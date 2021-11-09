@@ -11,10 +11,10 @@ export const Project = ({title, demo, description, img, github}) => {
                         <h3 className={styles.title}>{title}</h3>
                         <p>{description}</p>
                     </div>
-                    <Button text={'Code'}><a href={github} className={styles.previewBtn} target="_blank"
-                                             rel="noreferrer"> </a></Button>
-                    <Button text={'Demo'}><a href={demo} className={styles.previewBtn} target="_blank"
-                                             rel="noreferrer"> </a></Button>
+                    <a href={github} className={styles.previewBtn} target="_blank"
+                       rel="noreferrer"><Button text={'Code'}/></a>
+                    <a href={demo} className={styles.previewBtn} target="_blank"
+                       rel="noreferrer"><Button text={'Demo'}/></a>
                 </div>
             </div>
         </div>
